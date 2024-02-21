@@ -9,7 +9,7 @@
     <!-- Header -->
     <header>
       <img
-        src="assets/logo1.png"
+        src="../assets/logo1.png"
         alt="Imagem de um notebook com o nome do site embaixo"
       />
 
@@ -24,31 +24,59 @@
 
       <div class="other-links">
         <a href="#">GitHub</a>
-        <img src="../assets/avatar.svg" alt="Avatar do Usuário" />
+        <img
+          src="../assets/avatar.svg"
+          alt="Avatar do Usuário"
+          width="250px"
+          height="250px"
+        />
       </div>
     </header>
     <!-- Main -->
     <main>
       <h1>Formulário para contato</h1>
       <!-- Formulário para contato -->
-        <form action="contato.php" method="post">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required aria-label="Nome" />
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required aria-label="Email" />
+      <form action="contato.php" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required aria-label="Nome" />
 
-            <label for="telefone">Whatsapp:</label>
-            <input type="tel" id="telefone" name="telefone" required aria-label="Whatsapp" />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          aria-label="Email"
+        />
 
-            <label for="github">GitHub:</label>
-            <input type="text" id="github" name="github" required aria-label="GitHub" />
-    
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required aria-label="Mensagem"></textarea>
-    
-            <button type="submit">Enviar</button>
-        </form>
+        <label for="telefone">Whatsapp:</label>
+        <input
+          type="tel"
+          id="telefone"
+          name="telefone"
+          required
+          aria-label="Whatsapp"
+        />
+
+        <label for="github">GitHub:</label>
+        <input
+          type="text"
+          id="github"
+          name="github"
+          required
+          aria-label="GitHub"
+        />
+
+        <label for="message">Mensagem:</label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          aria-label="Mensagem"
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
     </main>
 
     <!-- Footer -->
