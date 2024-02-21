@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <img
+        src="../assets/logo1.png"
+        alt="Imagem de um notebook com o nome do site embaixo"
+      />
+
+      <nav id="navigation">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Devs</a></li>
+          <li><a href="#">Proposta da Plataforma</a></li>
+          <li><a href="#">Contate-nos</a></li>
+        </ul>
+      </nav>
+
+      <div class="other-links">
+        <a href="#">GitHub</a>
+        <img src="../assets/avatar.svg" alt="Avatar do Usuário" />
+      </div>
+    </header>
+    <!-- Main -->
+    <main>
+      <h1>Formulário para contato</h1>
+      <!-- Formulário para contato -->
+        <form action="contato.php" method="post">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required aria-label="Nome" />
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required aria-label="Email" />
+
+            <label for="telefone">Whatsapp:</label>
+            <input type="tel" id="telefone" name="telefone" required aria-label="Whatsapp" />
+
+            <label for="github">GitHub:</label>
+            <input type="text" id="github" name="github" required aria-label="GitHub" />
+    
+            <label for="message">Mensagem:</label>
+            <textarea id="message" name="message" required aria-label="Mensagem"></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2024, Tech4Dev.</p>
+    </footer>
+  </body>
+</html>
