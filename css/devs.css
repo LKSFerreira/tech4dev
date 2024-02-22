@@ -1,0 +1,166 @@
+.Paleta {
+    color: #6855c6;
+    color: #6956c7;
+    color: #67d0f5;
+    color: #c3ebfe;
+}
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    font-family: "Nunito", sans-serif;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #6855c6;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+}
+
+header img {
+    width: 64px;
+    height: 64px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #c3ebfe;
+}
+nav ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.title-section {
+    font-size: xx-large;
+}
+
+.container-devs {
+    text-align: center;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.other-links {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.other-links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.other-links a {
+    color: #c3ebfe;
+    text-decoration: none;
+    justify-content: center;
+    border: 1px solid #c3ebfe;
+    border-radius: 10px;
+    padding: 8px;
+}
+.other-links a:hover {
+    color: #c3ebfe;
+    text-decoration: none;
+    justify-content: center;
+    border: 1px solid #c3ebfe;
+    border-radius: 10px;
+    padding: 8px;
+    background-color: #67d0f5;
+}
+
+.photo-perfil img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.bio-devs {
+    margin-top: 15px;
+}
+
+.name-dev {
+    font-size: 28px;
+    display: flex;
+    color: #6855c6;
+    justify-content: flex-start;
+}
+
+.cargo-dev {
+    display: flex;
+    justify-content: flex-start;
+    color: #473a88;
+    padding: 0;
+    margin: 0;
+}
+
+.bio-dev {
+    color: #473a88;
+    margin-top: 15px;
+}
+
+.btn-goProfile button {
+    background-color: #6956c7;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+footer {
+    background-color: #6855c6;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
