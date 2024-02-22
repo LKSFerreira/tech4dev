@@ -27,11 +27,20 @@ header {
     color: #fff;
     padding: 15px;
     text-align: center;
+    position: fixed;
+    width: 100%;
+}
+
+section {
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 header img {
     width: 64px;
     height: 64px;
+    border: 4px solid #6855c6;
+    border-radius: 50%;
 }
 
 nav {
@@ -68,11 +77,10 @@ main {
     padding: 20px;
 }
 
+.logo {
+}
+
 .photo-dev-logon {
-    height: 64px;
-    width: 64px;
-    border: 4px solid #6855c6;
-    border-radius: 50%;
 }
 
 .title-section {
