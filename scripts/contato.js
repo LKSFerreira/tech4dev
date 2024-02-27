@@ -3,16 +3,9 @@ $(document).ready(function () {
 });
 
 
-ScrollReveal().reveal("#title", {
-  origin: "top",
+ScrollReveal().reveal(".form-box", {
+  origin: "right",
   duration: 2000,
   distance: "40%",
   reset: true,
 });
-
-// ScrollReveal().reveal("#social_media ul li", {
-//   origin: "left",
-//   duration: 2000,
-//   distance: "70%",
-//   reset: true,
-// });
