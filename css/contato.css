@@ -2,7 +2,7 @@ html {
   height: 100%;
 }
 
-.login-box {
+.form-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -15,18 +15,18 @@ html {
   border-radius: 10px;
 }
 
-.login-box h2 {
+.form-box h2 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
   text-align: center;
 }
 
-.login-box .user-box {
+.form-box .user-box {
   position: relative;
 }
 
-.login-box .user-box input,
+.form-box .user-box input,
 textarea {
   width: 100%;
   padding: 10px 0;
@@ -39,7 +39,7 @@ textarea {
   background: transparent;
 }
 
-.login-box .user-box label {
+.form-box .user-box label {
   position: absolute;
   top: 0;
   left: 0;
@@ -50,16 +50,16 @@ textarea {
   transition: 0.5s;
 }
 
-.login-box .user-box input:focus ~ label,
-.login-box .user-box input:valid ~ label {
+.form-box .user-box input:focus ~ label,
+.form-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
   color: #03e9f4;
   font-size: 12px;
 }
 
-.login-box .user-box textarea:focus ~ label,
-.login-box .user-box textarea:valid ~ label {
+.form-box .user-box textarea:focus ~ label,
+.form-box .user-box textarea:valid ~ label {
   top: -25px;
   left: 0;
   color: #03e9f4;
@@ -80,7 +80,7 @@ input:-webkit-autofill::first-line {
   color: #fff;
 }
 
-.login-box form a {
+.form-box form a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -94,7 +94,7 @@ input:-webkit-autofill::first-line {
   letter-spacing: 4px;
 }
 
-.login-box a:hover {
+.form-box a:hover {
   background: #03e9f4;
   color: #fff;
   border-radius: 5px;
@@ -102,12 +102,12 @@ input:-webkit-autofill::first-line {
     0 0 100px #03e9f4;
 }
 
-.login-box a span {
+.form-box a span {
   position: absolute;
   display: block;
 }
 
-.login-box a span:nth-child(1) {
+.form-box a span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
@@ -126,7 +126,7 @@ input:-webkit-autofill::first-line {
   }
 }
 
-.login-box a span:nth-child(2) {
+.form-box a span:nth-child(2) {
   top: -100%;
   right: 0;
   width: 2px;
@@ -146,7 +146,7 @@ input:-webkit-autofill::first-line {
   }
 }
 
-.login-box a span:nth-child(3) {
+.form-box a span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
@@ -166,7 +166,7 @@ input:-webkit-autofill::first-line {
   }
 }
 
-.login-box a span:nth-child(4) {
+.form-box a span:nth-child(4) {
   bottom: -100%;
   left: 0;
   width: 2px;
