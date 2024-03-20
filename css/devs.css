@@ -248,3 +248,14 @@ section {
         background-position: 0% 50%;
     }
 }
+
+@media (max-width: 420px) {
+    section {
+        width: auto;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+}

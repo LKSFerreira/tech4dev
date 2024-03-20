@@ -1,0 +1,153 @@
+:root {
+    --color1: #c3ebfe;
+    --color2: #67d0f5;
+    --color3: #6956c7;
+    --color4: #6855c6;
+    --color5: #f4f4f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header {
+    z-index: 1;
+}
+
+body {
+    background-image: linear-gradient(
+        to right top,
+        #6855c6,
+        #6855c6,
+        #6956c7,
+        #6956c7,
+        #6956c7,
+        #5e63d1,
+        #536fd9,
+        #477ae0,
+        #2e92eb,
+        #2aa8f1,
+        #44bdf4,
+        #67d0f5
+    );
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite alternate;
+    overflow-x: hidden;
+}
+
+.title-sobre-text-icon {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: x-large;
+    color: var(--color3);
+}
+
+.title-sobre-text-icon img {
+    animation: fadeIn 4s backwards;
+    width: 64px;
+}
+
+#title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        left: -10px;
+    }
+    to {
+        opacity: 1;
+        left: 0px;
+    }
+}
+
+p {
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 0 20px 0 20px;
+}
+
+img {
+    width: 45px;
+    margin-right: 10px;
+}
+
+em {
+    font-weight: 700;
+}
+.container {
+    background-color: var(--color5);
+    border-radius: 15px;
+    padding: 1em;
+    height: auto;
+    width: 100%;
+}
+
+.title-sobre-desc {
+    text-align: center;
+    font-size: x-large;
+    font-weight: 800;
+    margin-top: 1em;
+}
+.tema-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    /* background-color: var(--color5); */
+    border-radius: 10px;
+}
+
+.tema-principal em {
+    color: var(--color3);
+    font-weight: 600;
+}
+
+.img-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.projeto {
+    margin-top: 1.4em;
+}
+
+@media (max-width: 1200px) {
+    section {
+        width: fit-content;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 420px) {
+    .title-sobre-text-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    #projeto-footer {
+        margin-bottom: 20%;
+    }
+    .title-sobre {
+        display: none;
+    }
+
+    .tema-principal {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
