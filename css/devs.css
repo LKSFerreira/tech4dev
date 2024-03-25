@@ -249,7 +249,7 @@ section {
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 590px) {
     section {
         width: auto;
     }
