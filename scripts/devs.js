@@ -14,7 +14,9 @@ const options = {
 
 window.addEventListener("DOMContentLoaded", function () {
   const containerDevs = document.querySelector(".container-devs");
+  const spinner = document.querySelector('.spinner');
 
+  spinner.style.display = 'block'
   fetch(apiUrl, options)
     .then((response) => response.json())
     .then((data) => {
@@ -41,6 +43,7 @@ window.addEventListener("DOMContentLoaded", function () {
           </div>
         `;
         containerDevs.appendChild(card);
+        spinner.style.display = 'none'
       });
     })
     .catch((error) => console.error("Erro ao obter dados:", error));
