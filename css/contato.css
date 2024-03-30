@@ -1,53 +1,19 @@
+/* Estilo para o estado de preenchimento automático */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: 5000s ease-in-out 0s;
+}
+
+/* Estilo para a caixa de preenchimento automático */
+input:-webkit-autofill::first-line {
+  font-size: 16px;
+  color: #fff;
+}
+
 html {
   height: 100%;
-}
-
-.form-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 400px;
-  padding: 40px;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.5);
-  box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-}
-
-.form-box h2 {
-  margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-}
-
-.form-box .user-box {
-  position: relative;
-}
-
-.form-box .user-box input,
-textarea {
-  width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
-}
-
-.form-box .user-box label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  color: #fff;
-  pointer-events: none;
-  transition: 0.5s;
 }
 
 .form-box .user-box input:focus ~ label,
@@ -66,19 +32,7 @@ textarea {
   font-size: 12px;
 }
 
-/* Estilo para o estado de preenchimento automático */
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
-  transition: 5000s ease-in-out 0s;
-}
 
-/* Estilo para a caixa de preenchimento automático */
-input:-webkit-autofill::first-line {
-  font-size: 16px;
-  color: #fff;
-}
 
 .form-box form a {
   position: relative;
@@ -184,4 +138,52 @@ input:-webkit-autofill::first-line {
   100% {
     bottom: 100%;
   }
+}
+
+.form-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.form-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.form-box .user-box {
+  position: relative;
+}
+
+.form-box .user-box input,
+textarea {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.form-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
 }
