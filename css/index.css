@@ -37,6 +37,11 @@ body {
   animation: gradient 10s ease infinite alternate;
 }
 
+/* Menu Button */
+.menu-button {
+  display: none;
+}
+
 /* Container */
 main .container {
   height: 97vh;
@@ -72,5 +77,21 @@ main .container nav ul li i {
   }
   100% {
     background-position: 0% 50%;
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  main .container {
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+  }
+  main .container .title {
+    font-size: 3rem;
+  }
+
+  main .container .navigation ul {
+    gap: 1rem;
   }
 }

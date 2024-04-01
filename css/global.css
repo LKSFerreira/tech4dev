@@ -85,3 +85,63 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
   background: #c3ebfe;
 }
+
+@media screen and (max-width: 768px) {
+  /* Menu Button */
+  .menu-button {
+    display: block;
+  }
+  /* Header */
+  header {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  /* Navigation */
+  header .navigation {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    height: 100vh;
+    background-color: #c3ebfe;
+    padding: 5rem 2rem;
+    transform: translate(100%);
+    transition: transform 0.7s ease;
+    z-index: 99;
+  }
+
+  header .navigation ul {
+    flex-direction: column;
+  }
+
+  header .navigation ul a,
+  header .other-links a {
+    color: #000;
+    font-weight: 700;
+    border-color: #000;
+  }
+
+  /* Other Links */
+  header .other-links {
+    display: none;
+  }
+
+  header .menu-button {
+    padding: 0 1rem;
+    border-radius: 4px;
+    border: none;
+    font-size: 2rem;
+    background-color: #67d0f5;
+    color: #000;
+    border: 1px solid #000;
+  }
+
+  header .navigation .closeMenu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    padding-bottom: 5px;
+  }
+}
