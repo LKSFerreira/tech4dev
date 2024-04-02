@@ -1,4 +1,4 @@
-/* Estilo para o estado de preenchimento automático */
+/* Estilo para o estado de preenchimento automático dos inputs */
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
@@ -6,48 +6,51 @@ input:-webkit-autofill:active {
   transition: 5000s ease-in-out 0s;
 }
 
-/* Estilo para a caixa de preenchimento automático */
+/* Estilo para a primeira linha da caixa de preenchimento automático dos inputs */
 input:-webkit-autofill::first-line {
-  font-size: 16px;
+  font-size: 1rem; /* Convertido de 16px para 1rem */
   color: #fff;
 }
 
+/* Estilo base para o elemento html */
 html {
   height: 100%;
 }
 
+/* Estilo para labels flutuantes quando o input está focado ou preenchido corretamente */
 .form-box .user-box input:focus ~ label,
 .form-box .user-box input:valid ~ label {
-  top: -20px;
+  top: -1.25rem; /* Convertido de -20px para -1.25rem */
   left: 0;
   color: #03e9f4;
-  font-size: 12px;
+  font-size: 0.75rem; /* Convertido de 12px para 0.75rem */
 }
 
+/* Estilo para labels flutuantes quando a textarea está focada ou preenchida corretamente */
 .form-box .user-box textarea:focus ~ label,
 .form-box .user-box textarea:valid ~ label {
-  top: -25px;
+  top: -1.5625rem; /* Convertido de -25px para -1.5625rem */
   left: 0;
   color: #03e9f4;
-  font-size: 12px;
+  font-size: 0.75rem; /* Convertido de 12px para 0.75rem */
 }
 
-
-
+/* Estilo para links dentro de um formulário */
 .form-box form a {
   position: relative;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 0.625rem 1.25rem; /* Convertido de 10px 20px para 0.625rem 1.25rem */
   color: #03e9f4;
-  font-size: 16px;
+  font-size: 1rem; /* Convertido de 16px para 1rem */
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: 0.5s;
-  margin-top: 10px;
+  margin-top: 0.625rem; /* Convertido de 10px para 0.625rem */
   letter-spacing: 4px;
 }
 
+/* Estilo para o estado hover dos links dentro de um formulário */
 .form-box a:hover {
   background: #03e9f4;
   color: #fff;
@@ -56,20 +59,23 @@ html {
     0 0 100px #03e9f4;
 }
 
+/* Estilo base para spans dentro de links de um formulário */
 .form-box a span {
   position: absolute;
   display: block;
 }
 
+/* Estilo para o primeiro span dentro de links de um formulário para animação */
 .form-box a span:nth-child(1) {
   top: 0;
   left: -100%;
   width: 100%;
-  height: 2px;
+  height: 2px; /* Não convertido pois pode ser um valor específico para a altura da linha */
   background: linear-gradient(90deg, transparent, #03e9f4);
   animation: btn-anim1 1s linear infinite;
 }
 
+/* Animação para o primeiro span dentro de links de um formulário */
 @keyframes btn-anim1 {
   0% {
     left: -100%;
@@ -80,16 +86,18 @@ html {
   }
 }
 
+/* Estilo para o segundo span dentro de links de um formulário para animação */
 .form-box a span:nth-child(2) {
   top: -100%;
   right: 0;
-  width: 2px;
+  width: 0.125rem; /* Convertido de 2px para 0.125rem */
   height: 100%;
   background: linear-gradient(180deg, transparent, #03e9f4);
   animation: btn-anim2 1s linear infinite;
   animation-delay: 0.25s;
 }
 
+/* Animação para o segundo span dentro de links de um formulário */
 @keyframes btn-anim2 {
   0% {
     top: -100%;
@@ -100,16 +108,18 @@ html {
   }
 }
 
+/* Estilo para o terceiro span dentro de links de um formulário para animação */
 .form-box a span:nth-child(3) {
   bottom: 0;
   right: -100%;
   width: 100%;
-  height: 2px;
+  height: 0.125rem; /* Convertido de 2px para 0.125rem */
   background: linear-gradient(270deg, transparent, #03e9f4);
   animation: btn-anim3 1s linear infinite;
   animation-delay: 0.5s;
 }
 
+/* Animação para o terceiro span dentro de links de um formulário */
 @keyframes btn-anim3 {
   0% {
     right: -100%;
@@ -120,16 +130,18 @@ html {
   }
 }
 
+/* Estilo para o quarto span dentro de links de um formulário para animação */
 .form-box a span:nth-child(4) {
   bottom: -100%;
   left: 0;
-  width: 2px;
+  width: 0.125rem; /* Convertido de 2px para 0.125rem */
   height: 100%;
   background: linear-gradient(360deg, transparent, #03e9f4);
   animation: btn-anim4 1s linear infinite;
   animation-delay: 0.75s;
 }
 
+/* Animação para o quarto span dentro de links de um formulário */
 @keyframes btn-anim4 {
   0% {
     bottom: -100%;
@@ -140,50 +152,64 @@ html {
   }
 }
 
+/* Estilo para a caixa do formulário */
 .form-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 400px;
-  padding: 40px;
+  width: 25rem; /* Convertido de 400px para 25rem */
+  padding: 2.5rem; /* Convertido de 40px para 2.5rem */
   transform: translate(-50%, -50%);
   background: rgba(0, 0, 0, 0.5);
   box-sizing: border-box;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+  box-shadow: 0 0.9375rem 1.5625rem rgba(0, 0, 0, 0.6); /* Convertido de 15px para 0.9375rem e 25px para 1.5625rem */
+  border-radius: 0.625rem; /* Convertido de 10px para 0.625rem */
 }
 
+/* Estilo para o título h2 dentro da caixa do formulário */
 .form-box h2 {
-  margin: 0 0 30px;
+  margin: 0 0 1.875rem; /* Convertido de 30px para 1.875rem */
   padding: 0;
   color: #fff;
   text-align: center;
 }
 
+/* Estilo base para a caixa do usuário dentro do formulário */
 .form-box .user-box {
   position: relative;
 }
 
+/* Estilo para inputs e textareas dentro da caixa do usuário do formulário */
 .form-box .user-box input,
 textarea {
   width: 100%;
-  padding: 10px 0;
-  font-size: 16px;
+  padding: 0.625rem 0; /* Convertido de 10px para 0.625rem */
+  font-size: 1rem; /* Convertido de 16px para 1rem */
   color: #fff;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem; /* Convertido de 30px para 1.875rem */
   border: none;
   border-bottom: 1px solid #fff;
   outline: none;
   background: transparent;
 }
 
+/* Estilo para labels dentro da caixa do usuário do formulário */
 .form-box .user-box label {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10px 0;
-  font-size: 16px;
+  padding: 0.625rem 0; /* Convertido de 10px para 0.625rem */
+  font-size: 1rem; /* Convertido de 16px para 1rem */
   color: #fff;
   pointer-events: none;
   transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 420px) {
+}
+
+@media (max-width: 320px) {
 }
