@@ -87,10 +87,12 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+
   /* Menu Button */
   .menu-button {
     display: block;
   }
+
   /* Header */
   header {
     position: relative;
@@ -144,4 +146,15 @@ footer {
 
     padding-bottom: 5px;
   }
+
+  footer {
+    margin-top: 5rem;
+  }
+
+  @media (max-width: 440px) {
+    footer {
+      margin-top: 11rem;
+    }
+  }
+
 }

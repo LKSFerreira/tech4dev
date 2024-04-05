@@ -29,6 +29,7 @@
 
     <title>Contato</title>
   </head>
+
   <body>
     <!-- Header -->
     <header>
@@ -67,6 +68,7 @@
               <input
                 type="text"
                 name="name"
+                minlength="6"
                 required
                 aria-label="Digite seu nome completo"
               />
@@ -77,6 +79,9 @@
                 type="email"
                 name="email"
                 required
+                minlength="6"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Digite um email válido"
                 aria-label="Digite o seu email"
               />
               <label>Email</label>
@@ -87,6 +92,8 @@
                 name="whatsapp"
                 id="whatsapp"
                 required
+                minlength="11"
+                title="Digite apenas números"
                 aria-label="Digite o seu número de WhatsApp apenas com números"
               />
               <label>WhatsApp</label>
@@ -96,6 +103,8 @@
                 type="text"
                 name="github"
                 required
+                pattern="^[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*$"
+                title="Por favor, insira apenas o nome de usuário do GitHub, sem a URL."
                 aria-label="Digite o link do seu perfil no GitHub"
               />
               <label>Link do Perfil no GitHub</label>
@@ -104,6 +113,7 @@
               <textarea
                 name="message"
                 required
+                minlength="10"
                 aria-label="Digite sua mensagem"
               ></textarea>
               <label>Mensagem</label>
