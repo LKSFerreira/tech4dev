@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Header Images */
 header img {
   width: 54px;
@@ -87,7 +91,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
   /* Menu Button */
   .menu-button {
     display: block;
@@ -137,6 +140,7 @@ footer {
     background-color: #67d0f5;
     color: #000;
     border: 1px solid #000;
+    cursor: pointer;
   }
 
   header .navigation .closeMenu {
@@ -156,5 +160,4 @@ footer {
       margin-top: 11rem;
     }
   }
-
 }
