@@ -98,7 +98,6 @@ footer {
 
   /* Header */
   header {
-    position: relative;
     justify-content: space-between;
   }
 
@@ -149,15 +148,5 @@ footer {
     right: 20px;
 
     padding-bottom: 5px;
-  }
-
-  footer {
-    margin-top: 5rem;
-  }
-
-  @media (max-width: 440px) {
-    footer {
-      margin-top: 11rem;
-    }
   }
 }

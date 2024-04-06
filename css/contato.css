@@ -19,8 +19,8 @@ html {
 }
 
 /* Estilo para labels flutuantes quando o input está focado ou preenchido corretamente */
-.form-box .user-box input:focus~label,
-.form-box .user-box input:valid~label {
+.form-box .user-box input:focus ~ label,
+.form-box .user-box input:valid ~ label {
   top: -1.25rem;
   left: 0;
   color: #03e9f4;
@@ -28,8 +28,8 @@ html {
 }
 
 /* Estilo para labels flutuantes quando a textarea está focada ou preenchida corretamente */
-.form-box .user-box textarea:focus~label,
-.form-box .user-box textarea:valid~label {
+.form-box .user-box textarea:focus ~ label,
+.form-box .user-box textarea:valid ~ label {
   top: -1.5625rem;
   /* Convertido de -25px para -1.5625rem */
   left: 0;
@@ -230,8 +230,6 @@ textarea {
 }
 
 @media (max-width: 768px) {
-
-
   /* Estilo para a caixa do formulário */
   .form-box {
     position: absolute;
@@ -242,7 +240,6 @@ textarea {
 }
 
 @media (max-width: 440px) {
-
   /* Estilo para a caixa do formulário */
   .form-box {
     position: absolute;
@@ -255,7 +252,17 @@ textarea {
   .form-box h2 {
     font-size: 1.3rem;
   }
-
 }
 
-@media (max-width: 320px) {}
+@media (max-width: 320px) {
+}
+
+footer {
+  margin-top: 5rem;
+}
+
+@media (max-width: 440px) {
+  footer {
+    margin-top: 11rem;
+  }
+}
