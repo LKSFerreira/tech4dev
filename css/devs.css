@@ -207,6 +207,9 @@ section {
     cursor: pointer;
     font-size: 14px;
 }
+.menu-button {
+    display: none;
+}
 
 @keyframes movinBtn {
     0% {
