@@ -1,7 +1,7 @@
 // .github/scripts/add-profile.js
 import { readFileSync, writeFileSync } from 'fs';
 
-const issueBody = process.argv[2];
+const issueBody = process.argv[1];
 
 function extractDataFromBody(body) {
   const namePattern = /Nome Completo: \[(.*?)\]/;
@@ -25,7 +25,6 @@ function extractDataFromBody(body) {
   }
   return null;
 }
-
 
 function updateDevsJson(profile) {
   const devsPath = './../../data/devs.json';

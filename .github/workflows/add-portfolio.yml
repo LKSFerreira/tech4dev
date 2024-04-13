@@ -14,7 +14,7 @@ jobs:
       - name: Configurar Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "14"
+          node-version: "20"
 
       - name: Escrever corpo da issue em um arquivo temporário
         run: echo "${{ github.event.issue.body }}" > issue_body.txt
