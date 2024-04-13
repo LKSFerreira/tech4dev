@@ -17,8 +17,7 @@ jobs:
           node-version: "20"
 
       - name: Extrair informações da issue e atualizar o arquivo JSON
-        run: |
-          echo "${{ github.event.issue.body }}" | node .github/scripts/add-profile.js
+        run: node .github/scripts/add-profile.js
 
       - name: Commit e Push das alterações
         run: |

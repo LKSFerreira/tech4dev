@@ -1,5 +1,9 @@
 import { readFileSync, writeFileSync } from 'fs';
 
+const eventPayload = JSON.parse(readFileSync(process.env.GITHUB_EVENT_PATH, 'utf8'));
+const issueBody = eventPayload.issue.body;
+
+
 function extractDataFromBody(body) {
   const namePattern = /Nome Completo: \[(.*?)\]/;
   const githubPattern = /GitHub Username: \[(.*?)\]/;
@@ -30,20 +34,14 @@ function updateDevsJson(profile) {
   writeFileSync(devsPath, JSON.stringify(devs, null, 2));
 }
 
-// Lê o corpo da issue da entrada padrão (stdin)
-let issueBody = '';
-process.stdin.setEncoding('utf8');
+function updateDevsJson(profile) {
+  const devsPath = './../../data/devs.json';
+  const devs = JSON.parse(readFileSync(devsPath));
+  devs.push(profile);
+  writeFileSync(devsPath, JSON.stringify(devs, null, 2));
+}
 
-process.stdin.on('readable', () => {
-  let chunk;
-  while ((chunk = process.stdin.read()) !== null) {
-    issueBody += chunk;
-  }
-});
-
-process.stdin.on('end', () => {
-  const profileData = extractDataFromBody(issueBody);
-  if (profileData) {
-    updateDevsJson(profileData);
-  }
-});
+const profileData = extractDataFromBody(issueBody);
+if (profileData) {
+  updateDevsJson(profileData);
+}
