@@ -18,12 +18,12 @@ jobs:
 
       - name: Escrever corpo da issue em um arquivo temporário
         run: |
-          printf "%s" "${{ github.event.issue.body }}" > issue_body.txt
-
+            echo "${{ github.event.issue.body }}" | base64 > issue_body.b64
+        
       - name: Extrair informações da issue e atualizar o arquivo JSON
-        run: node .github/scripts/add-profile.js issue_body.txt
-        env:
-          ISSUE_BODY_PATH: issue_body.txt
+        run: |
+            base64 -d issue_body.b64 > issue_body.txt
+            node .github/scripts/add-profile.js issue_body.txt
 
       - name: Commit e Push das alterações
         run: |
