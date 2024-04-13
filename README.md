@@ -23,7 +23,7 @@
 
 ![Downloads](https://img.shields.io/github/downloads/LKSFerreira/tech4dev/total) ![Contributors](https://img.shields.io/github/contributors/LKSFerreira/tech4dev?color=dark-green) ![Forks](https://img.shields.io/github/forks/LKSFerreira/tech4dev?style=social) ![Stargazers](https://img.shields.io/github/stars/LKSFerreira/tech4dev?style=social) ![Issues](https://img.shields.io/github/issues/LKSFerreira/tech4dev) ![License](https://img.shields.io/github/license/LKSFerreira/tech4dev)
 
-## Table Of Contents
+## Índice
 
 - [Sobre o projeto](#sobre-o-projeto)
 - [Tecnologias](#tecnologias)
