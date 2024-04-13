@@ -18,7 +18,7 @@ jobs:
 
       - name: Salvar corpo da issue em um arquivo JSON
         run: |
-          cat ${{ github.event.issue.body }} > issue_body.txt
+          echo $'${{ toJson(github.event.issue.body) }}' > issue_body.json
 
       - name: Extrair informações da issue e atualizar o arquivo JSON
         run: |
