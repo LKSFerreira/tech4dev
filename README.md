@@ -10,14 +10,14 @@
     Projeto Integrado para conclusão do curso Talento Cloud Proz
     <br/>
     <br/>
-    <a href="https://github.com/LKSFerreira/tech4dev"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LKSFerreira/tech4dev"><strong>Explorar a documentação »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/LKSFerreira/tech4dev">View Demo</a>
+    <a href="https://github.com/LKSFerreira/tech4dev">Visão Geral</a>
     .
-    <a href="https://github.com/LKSFerreira/tech4dev/issues">Report Bug</a>
+    <a href="https://github.com/LKSFerreira/tech4dev/issues">Reportar um Bug</a>
     .
-    <a href="https://github.com/LKSFerreira/tech4dev/issues">Request Feature</a>
+    <a href="https://github.com/LKSFerreira/tech4dev/issues">Solocitar uma Feature</a>
   </p>
 </p>
 
