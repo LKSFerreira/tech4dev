@@ -1,0 +1,28 @@
+name: Adicionar Portfólio
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-portfolio:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
+
+      - name: Extrair informações da issue e atualizar o arquivo JSON
+        run: node .github/scripts/add-profile.js "${{ github.event.issue.body }}"
+
+      - name: Commit e Push das alterações
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add data/devs.json
+          git commit -m "Adicionar novo perfil ao portfólio"
+          git push
