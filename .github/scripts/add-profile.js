@@ -1,8 +1,8 @@
 import { readFileSync, writeFileSync } from 'fs';
 
-// O primeiro argumento após o nome do script é o caminho para o arquivo que contém o corpo da issue
 const issueBodyPath = process.argv[2];
-const issueBody = readFileSync(issueBodyPath, 'utf8');
+const issueContent = JSON.parse(readFileSync(issueBodyPath, 'utf8'));
+const issueBody = issueContent.body;
 
 
 function extractDataFromBody(body) {

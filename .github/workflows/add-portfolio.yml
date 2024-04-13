@@ -16,9 +16,9 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Escrever corpo da issue em um arquivo temporário
+      - name: Salvar corpo da issue em um arquivo JSON
         run: |
-          printf "%s" "${{ github.event.issue.body }}" | base64 > issue_body.b64
+          echo '{ "body": "${{ github.event.issue.body }}" }' > issue_body.json
 
       - name: Extrair informações da issue e atualizar o arquivo JSON
         run: |
