@@ -67,7 +67,8 @@ Entendemos que nenhum modelo de plataforma serve para todos os projetos, pois su
 
 ## Getting Started
 
-Requisito para executar o projeto localmente é ter o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+Requisito para executar o projeto localmente:
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ### Requisitos
 
