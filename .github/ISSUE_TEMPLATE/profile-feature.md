@@ -9,7 +9,7 @@ assignees: ''
 body:
   - type: markdown
     attributes:
-      value: "## Welcome!"
+      value: "## Bem-vindo!"
   - type: markdown
     attributes:
       value: |      
