@@ -1,7 +1,7 @@
 ---
 name: Profile feature
 about: Para adicionar seu portifólio, basta preencher corretamente o template.
-title: [INCLUSÃO] Nome do Desenvolvedor
+title: '[INCLUSÃO] Nome do Desenvolvedor'
 labels: feature
 assignees: ''
 
