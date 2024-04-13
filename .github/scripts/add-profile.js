@@ -28,7 +28,8 @@ function extractDataFromBody(body) {
 }
 
 function updateDevsJson(profile) {
-  const devsPath = './../../data/devs.json';
+  // O caminho deve ser relativo ao diretório raiz do repositório onde o GitHub Actions está executando
+  const devsPath = './data/devs.json'; // Ajuste o caminho conforme necessário
   const devs = JSON.parse(readFileSync(devsPath));
   devs.push(profile);
   writeFileSync(devsPath, JSON.stringify(devs, null, 2));
