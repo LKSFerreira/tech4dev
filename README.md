@@ -10,20 +10,20 @@
     Projeto Integrado para conclusão do curso Talento Cloud Proz
     <br/>
     <br/>
-    <a href="https://github.com/LKSFerreira/tech4dev"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/LKSFerreira/tech4dev"><strong>Explorar a documentação »</strong></a>
     <br/>
     <br/>
-    <a href="https://github.com/LKSFerreira/tech4dev">View Demo</a>
+    <a href="https://github.com/LKSFerreira/tech4dev">Visão Geral</a>
     .
-    <a href="https://github.com/LKSFerreira/tech4dev/issues">Report Bug</a>
+    <a href="https://github.com/LKSFerreira/tech4dev/issues">Reportar um Bug</a>
     .
-    <a href="https://github.com/LKSFerreira/tech4dev/issues">Request Feature</a>
+    <a href="https://github.com/LKSFerreira/tech4dev/issues">Solocitar uma Feature</a>
   </p>
 </p>
 
 ![Downloads](https://img.shields.io/github/downloads/LKSFerreira/tech4dev/total) ![Contributors](https://img.shields.io/github/contributors/LKSFerreira/tech4dev?color=dark-green) ![Forks](https://img.shields.io/github/forks/LKSFerreira/tech4dev?style=social) ![Stargazers](https://img.shields.io/github/stars/LKSFerreira/tech4dev?style=social) ![Issues](https://img.shields.io/github/issues/LKSFerreira/tech4dev) ![License](https://img.shields.io/github/license/LKSFerreira/tech4dev)
 
-## Table Of Contents
+## Índice
 
 - [Sobre o projeto](#sobre-o-projeto)
 - [Tecnologias](#tecnologias)
@@ -67,7 +67,8 @@ Entendemos que nenhum modelo de plataforma serve para todos os projetos, pois su
 
 ## Getting Started
 
-Requisito para executar o projeto localmente é ter o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+Requisito para executar o projeto localmente:
+- [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
 
 ### Requisitos
 
