@@ -34,13 +34,6 @@ function updateDevsJson(profile) {
   writeFileSync(devsPath, JSON.stringify(devs, null, 2));
 }
 
-function updateDevsJson(profile) {
-  const devsPath = './../../data/devs.json';
-  const devs = JSON.parse(readFileSync(devsPath));
-  devs.push(profile);
-  writeFileSync(devsPath, JSON.stringify(devs, null, 2));
-}
-
 const profileData = extractDataFromBody(issueBody);
 if (profileData) {
   updateDevsJson(profileData);
