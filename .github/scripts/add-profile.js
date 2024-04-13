@@ -1,7 +1,9 @@
-// .github/scripts/add-profile.js
 import { readFileSync, writeFileSync } from 'fs';
 
-const issueBody = process.argv[1];
+// O primeiro argumento após o nome do script é o caminho para o arquivo que contém o corpo da issue
+const issueBodyPath = process.argv[2];
+const issueBody = readFileSync(issueBodyPath, 'utf8');
+
 
 function extractDataFromBody(body) {
   const namePattern = /Nome Completo: \[(.*?)\]/;

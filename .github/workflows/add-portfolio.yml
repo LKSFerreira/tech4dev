@@ -17,7 +17,8 @@ jobs:
           node-version: "20"
 
       - name: Escrever corpo da issue em um arquivo temporário
-        run: echo "${{ github.event.issue.body }}" > issue_body.txt
+        run: |
+          printf "%s" "${{ github.event.issue.body }}" > issue_body.txt
 
       - name: Extrair informações da issue e atualizar o arquivo JSON
         run: node .github/scripts/add-profile.js issue_body.txt
