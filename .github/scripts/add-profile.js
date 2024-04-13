@@ -34,7 +34,7 @@ function updateDevsJson(profile) {
   writeFileSync(devsPath, JSON.stringify(devs, null, 2));
 }
 
-const profileData = extractDataFromBody(issueBodyExample);
+const profileData = extractDataFromBody(issueBody);
 if (profileData) {
   updateDevsJson(profileData);
 }
