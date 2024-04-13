@@ -1,10 +1,5 @@
 import { readFileSync, writeFileSync } from 'fs';
 
-const issueBodyPath = process.argv[2];
-const issueContent = JSON.parse(readFileSync(issueBodyPath, 'utf8'));
-const issueBody = issueContent.body;
-
-
 function extractDataFromBody(body) {
   const namePattern = /Nome Completo: \[(.*?)\]/;
   const githubPattern = /GitHub Username: \[(.*?)\]/;
@@ -35,7 +30,20 @@ function updateDevsJson(profile) {
   writeFileSync(devsPath, JSON.stringify(devs, null, 2));
 }
 
-const profileData = extractDataFromBody(issueBody);
-if (profileData) {
-  updateDevsJson(profileData);
-}
+// Lê o corpo da issue da entrada padrão (stdin)
+let issueBody = '';
+process.stdin.setEncoding('utf8');
+
+process.stdin.on('readable', () => {
+  let chunk;
+  while ((chunk = process.stdin.read()) !== null) {
+    issueBody += chunk;
+  }
+});
+
+process.stdin.on('end', () => {
+  const profileData = extractDataFromBody(issueBody);
+  if (profileData) {
+    updateDevsJson(profileData);
+  }
+});
