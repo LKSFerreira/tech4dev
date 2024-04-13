@@ -1,8 +1,10 @@
+---
 name: Profile feature
 about: Para adicionar seu portfólio, basta preencher corretamente o template.
 title: 'Adicione meu portfólio - MEU_NOME_AQUI'
 labels: feature
 assignees: ''
+---
 
 body:
   - type: markdown
