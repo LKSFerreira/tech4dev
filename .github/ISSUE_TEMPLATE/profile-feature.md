@@ -1,6 +1,6 @@
 ---
 name: Profile feature
-about: Para participar adicionar seu portifólio, basta preencher corretamente o template.
+about: Para adicionar seu portifólio, basta preencher corretamente o template.
 title: ''
 labels: feature
 assignees: ''
