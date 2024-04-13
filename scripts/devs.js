@@ -1,4 +1,6 @@
-const apiUrl = "https://api.jsonbin.io/v3/b/65fb59f11f5677401f4077e5";
+import { getGitHubUser } from "../services/apiGitHub.js";
+
+const apiUrl = "../data/developers.json";
 
 const headers = {
   "X-Master-Key":
@@ -17,28 +19,46 @@ window.addEventListener("DOMContentLoaded", function () {
   const spinner = document.querySelector('.spinner');
 
   spinner.style.display = 'block'
-  fetch(apiUrl, options)
+
+  fetch(apiUrl)
     .then((response) => response.json())
     .then((data) => {
-      console.log(data.record);
-      data.record.forEach((developer) => {
+
+      console.log(data);
+
+      data.forEach(async (localProfile) => {
+
+        const githubProfile = await getGitHubUser(localProfile.github);
+
+
+        console.log(githubProfile);
+
         const card = document.createElement("article");
         card.classList.add("card");
 
         card.innerHTML = `
+        <div class="container-photo-bio">
+        
           <div class="photo-perfil">
             <figure>
-              <img src="${developer.photo}" alt="${developer.name}" />
+              <img src="${githubProfile.avatar_url}" alt="${localProfile.name}" />
             </figure>
           </div>
+
           <div class="bio-devs">
-            <h3 class="name-dev">${developer.name}</h3>
-            <h4 class="cargo-dev">${developer.role}</h4>
-            <p class="bio-dev">${developer.bio}</p>
+            <h3 class="name-dev">${localProfile.name}</h3>
+            <h4 class="cargo-dev">${localProfile.role}</h4>
+            <p class="bio-dev">${githubProfile.bio}</p>
           </div>
+
+        </div>
+
           <div class="btn-goProfile">
-            <a href="${developer.linkedin}" target="_blank">
-              <button>Perfil</button>
+            <a href="${githubProfile.url}" target="_blank">
+              <button>GitHub</button>
+            </a>
+            <a href="${localProfile.linkedin}" target="_blank">
+              <button>LinkedIn</button>
             </a>
           </div>
         `;

@@ -1,142 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Links -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="shortcut icon"
-      href="../assets/logoIcon.ico"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/contato.css" />
 
-    <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../scripts/index.js" defer></script>
-    <script src="../scripts/contato.js" defer></script>
-    <script src="../scripts/global.js" defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="../assets/logoIcon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/contato.css" />
 
-    <title>Contato</title>
-  </head>
+  <!-- JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="../scripts/index.js" defer></script>
+  <script src="../scripts/contato.js" defer></script>
+  <script src="../scripts/global.js" defer></script>
 
-  <body>
-    <!-- Header -->
-    <header>
-      <img
-        src="../assets/logo1.png"
-        alt="Imagem de um notebook com o nome do site embaixo"
-      />
+  <title>Contato</title>
+</head>
 
-      <nav id="navigation" class="navigation">
-        <ul>
-          <li><a href="../index.html">Início</a></li>
-          <li><a href="devs.html">Devs</a></li>
-          <li><a href="sobre.html">Proposta da Plataforma</a></li>
-          <li><a href="#">Contate-nos</a></li>
-        </ul>
-        <button id="closeMenu" class="menu-button closeMenu">x</button>
-      </nav>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="../assets/logo1.png" alt="Imagem de um notebook com o nome do site embaixo" />
 
-      <div class="other-links">
-        <a href="#">GitHub</a>
-        <img
-          src="../assets/avatar.svg"
-          alt="Avatar do Usuário"
-          width="250px"
-          height="250px"
-        />
+    <nav id="navigation" class="navigation">
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="devs.html">Devs</a></li>
+        <li><a href="sobre.html">Proposta da Plataforma</a></li>
+        <li><a href="#">Contate-nos</a></li>
+      </ul>
+      <button id="closeMenu" class="menu-button closeMenu">x</button>
+    </nav>
+
+    <div class="other-links">
+      <a href="https://github.com/LKSFerreira/tech4dev" target="_blank">GitHub</a>
+      <img src="../assets/avatar.svg" alt="Avatar do Usuário" width="250px" height="250px" />
+    </div>
+
+    <button id="openMenu" class="menu-button">≡</button>
+  </header>
+  <!-- Main -->
+  <main>
+    <div class="container">
+      <!-- Formulário para contato -->
+      <div class="form-box">
+        <h2>Formulário de contato</h2>
+        <form action="" method="post" autocomplete="off">
+          <div class="user-box">
+            <input type="text" name="name" minlength="6" required aria-label="Digite seu nome completo" />
+            <label>Nome completo</label>
+          </div>
+          <div class="user-box">
+            <input type="email" name="email" required minlength="6" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+              title="Digite um email válido" aria-label="Digite o seu email" />
+            <label>Email</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="whatsapp" id="whatsapp" required minlength="11" title="Digite apenas números"
+              aria-label="Digite o seu número de WhatsApp apenas com números" />
+            <label>WhatsApp</label>
+          </div>
+          <div class="user-box">
+            <input type="text" name="github" required pattern="^[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*$"
+              title="Por favor, insira apenas o nome de usuário do GitHub, sem a URL."
+              aria-label="Digite o link do seu perfil no GitHub" />
+            <label>Link do Perfil no GitHub</label>
+          </div>
+          <div class="user-box">
+            <textarea name="message" required minlength="10" aria-label="Digite sua mensagem"></textarea>
+            <label>Mensagem</label>
+          </div>
+          <a href="#">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Enviar
+          </a>
+        </form>
       </div>
+    </div>
+  </main>
 
-      <button id="openMenu" class="menu-button">≡</button>
-    </header>
-    <!-- Main -->
-    <main>
-      <div class="container">
-        <!-- Formulário para contato -->
-        <div class="form-box">
-          <h2>Formulário de contato</h2>
-          <form action="" method="post" autocomplete="off">
-            <div class="user-box">
-              <input
-                type="text"
-                name="name"
-                minlength="6"
-                required
-                aria-label="Digite seu nome completo"
-              />
-              <label>Nome completo</label>
-            </div>
-            <div class="user-box">
-              <input
-                type="email"
-                name="email"
-                required
-                minlength="6"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
-                title="Digite um email válido"
-                aria-label="Digite o seu email"
-              />
-              <label>Email</label>
-            </div>
-            <div class="user-box">
-              <input
-                type="text"
-                name="whatsapp"
-                id="whatsapp"
-                required
-                minlength="11"
-                title="Digite apenas números"
-                aria-label="Digite o seu número de WhatsApp apenas com números"
-              />
-              <label>WhatsApp</label>
-            </div>
-            <div class="user-box">
-              <input
-                type="text"
-                name="github"
-                required
-                pattern="^[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*$"
-                title="Por favor, insira apenas o nome de usuário do GitHub, sem a URL."
-                aria-label="Digite o link do seu perfil no GitHub"
-              />
-              <label>Link do Perfil no GitHub</label>
-            </div>
-            <div class="user-box">
-              <textarea
-                name="message"
-                required
-                minlength="10"
-                aria-label="Digite sua mensagem"
-              ></textarea>
-              <label>Mensagem</label>
-            </div>
-            <a href="#">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              Enviar
-            </a>
-          </form>
-        </div>
-      </div>
-    </main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024, Tech4Dev.</p>
+  </footer>
+</body>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024, Tech4Dev.</p>
-    </footer>
-  </body>
 </html>
