@@ -16,13 +16,30 @@ jobs:
         with:
           node-version: "14"
 
+      - name: Escrever corpo da issue em um arquivo temporário
+        run: echo "${{ github.event.issue.body }}" > issue_body.txt
+
       - name: Extrair informações da issue e atualizar o arquivo JSON
-        run: node .github/scripts/add-profile.js "${{ github.event.issue.body }}"
+        run: node .github/scripts/add-profile.js issue_body.txt
+        env:
+          ISSUE_BODY_PATH: issue_body.txt
 
       - name: Commit e Push das alterações
         run: |
           git config --global user.name 'github-actions'
           git config --global user.email 'github-actions@github.com'
           git add data/devs.json
-          git commit -m "Adicionar novo perfil ao portfólio"
+          git commit -m ":tada: Adicionado novo perfil ao portfólio" || echo "Nenhuma alteração para commitar"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fechar a issue
+        if: success() # Somente se os passos anteriores foram bem-sucedidos
+        run: |
+          curl \
+            -X PATCH \
+            -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            "https://api.github.com/repos/${{ github.repository }}/issues/${{ github.event.issue.number }}" \
+            -d '{"state": "closed"}'
