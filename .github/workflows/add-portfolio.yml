@@ -18,11 +18,11 @@ jobs:
 
       - name: Salvar corpo da issue em um arquivo JSON
         run: |
-          echo '{ "body": "${{ github.event.issue.body }}" }' > issue_body.json
+          cat ${{ github.event.issue.body }} > issue_body.txt
 
       - name: Extrair informações da issue e atualizar o arquivo JSON
         run: |
-          node .github/scripts/add-profile.js issue_body.json
+          node .github/scripts/add-profile.js issue_body.txt
 
       - name: Commit e Push das alterações
         run: |
