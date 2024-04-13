@@ -54,7 +54,7 @@ window.addEventListener("DOMContentLoaded", function () {
         </div>
 
           <div class="btn-goProfile">
-            <a href="${githubProfile.url}" target="_blank">
+            <a href="${githubProfile.html_url}" target="_blank">
               <button>GitHub</button>
             </a>
             <a href="${localProfile.linkedin}" target="_blank">
