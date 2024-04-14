@@ -40,7 +40,7 @@
 ## Sobre o projeto
 
 <a href="https://lksferreira.github.io/tech4dev" target="_blank">
-  <img src="https://raw.githubusercontent.com/LKSFerreira/tech4dev/main/assets/home.png" alt="Screen Shot">
+  <img src="https://raw.githubusercontent.com/LKSFerreira/tech4dev/main/assets/home.png" alt="Screen Shot target="_blank">
 </a>
 
 **Por que "Tech 4 Dev"?**
