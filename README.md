@@ -39,7 +39,7 @@
 
 ## Sobre o projeto
 
-<a href="[https://lksferreira.github.io/tech4dev](https://lksferreira.github.io/tech4dev)" target="_blank">
+<a href="(https://lksferreira.github.io/tech4dev" target="_blank">
   <img src="https://raw.githubusercontent.com/LKSFerreira/tech4dev/main/assets/home.png" alt="Screen Shot">
 </a>
 
