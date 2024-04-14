@@ -39,7 +39,9 @@
 
 ## Sobre o projeto
 
-[![Screen Shot](https://raw.githubusercontent.com/LKSFerreira/tech4dev/main/assets/home.png)](https://lksferreira.github.io/tech4dev)
+<a href="https://lksferreira.github.io/tech4dev" target="_blank">
+  <img src="https://raw.githubusercontent.com/LKSFerreira/tech4dev/main/assets/home.png" alt="Screen Shot">
+</a>
 
 **Por que "Tech 4 Dev"?**
 Acreditamos que o tempo dos desenvolvedores deve ser focado na criação de algo incrível. Um projeto que solucione problemas e ajude outras pessoas. Com isso em mente:
