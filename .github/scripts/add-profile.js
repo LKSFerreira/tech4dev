@@ -5,16 +5,32 @@ const issueBody = eventPayload.issue.body;
 
 
 function extractDataFromBody(body) {
+  // Dividir o corpo da issue em seções
+  const sections = body.split('```');
+  // Encontrar a seção que contém os dados do usuário
+  const userDataSection = sections.find(section =>
+    section.includes('Nome Completo:') &&
+    section.includes('GitHub Username:') &&
+    section.includes('Role:') &&
+    section.includes('LinkedIn URL:')
+  );
+
+  // Se não encontrar uma seção com os dados do usuário, retorna null
+  if (!userDataSection) return null;
+
+  // Padrões de regex para extrair os dados
   const namePattern = /Nome Completo: \[(.*?)\]/;
   const githubPattern = /GitHub Username: \[(.*?)\]/;
   const rolePattern = /Role: \[(.*?)\]/;
   const linkedinPattern = /LinkedIn URL: \[(.*?)\]/;
 
-  const nameMatch = body.match(namePattern);
-  const githubMatch = body.match(githubPattern);
-  const roleMatch = body.match(rolePattern);
-  const linkedinMatch = body.match(linkedinPattern);
+  // Extrair os dados usando os padrões de regex
+  const nameMatch = userDataSection.match(namePattern);
+  const githubMatch = userDataSection.match(githubPattern);
+  const roleMatch = userDataSection.match(rolePattern);
+  const linkedinMatch = userDataSection.match(linkedinPattern);
 
+  // Se todos os dados forem encontrados, cria o objeto profile
   if (nameMatch && githubMatch && roleMatch && linkedinMatch) {
     const profile = {
       name: nameMatch[1].trim(),
