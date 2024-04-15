@@ -10,6 +10,14 @@ assignees: ''
 
 Por favor, preencha as informações abaixo para que possamos adicionar seu perfil ao repositório.
 
+Exemplo:
+```md
+Nome Completo: [Lucas Ferreira]
+GitHub Username: [LKSFerreira]
+Role: [Desenvolvedor Back-End]
+LinkedIn URL: [https://www.linkedin.com/in/lucas-ferreira-developer/]
+```
+
 ```md
 Nome Completo: [SEU_NOME_AQUI]
 GitHub Username: [SEU_USUARIO_GITHUB_AQUI]
