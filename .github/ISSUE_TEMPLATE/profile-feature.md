@@ -16,14 +16,6 @@ GitHub Username: [SEU_USUARIO_GITHUB_AQUI]
 Role: [SUA_FUNCAO_AQUI] 
 LinkedIn URL: [SEU_LINK_DO_LINKEDIN_AQUI]
 ```
-
-Exemplo:
-```md
-Nome Completo: [Lucas Ferreira]
-GitHub Username: [LKSFerreira]
-Role: [Desenvolvedor Back-End]
-LinkedIn URL: [https://www.linkedin.com/in/lucas-ferreira-developer/]
-```
 Exemplos de Role: Desenvolvedor Java, Front-End Developer, Engenheiro de Software...
 
 Obs: Não altere além dos locais indicados, pois o processo é automatizado.
