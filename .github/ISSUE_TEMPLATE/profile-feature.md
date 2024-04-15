@@ -1,6 +1,6 @@
 ---
 
-name: Profile feature
+name: Adicionar perfil
 about: Para adicionar seu portfólio, basta preencher corretamente o template.
 title: 'Adicione meu portfólio - [SEU_NOME_AQUI]'
 labels: feature
