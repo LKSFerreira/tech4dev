@@ -18,6 +18,11 @@ Role: [Desenvolvedor Back-End]
 LinkedIn URL: [https://www.linkedin.com/in/lucas-ferreira-developer/]
 ```
 
+Suas informações devem ser preenchidas a baixo
+1. Não remova os colchetes [ ]
+2. Não coloque entre aspas " "
+3. Substitua o conteúdo dos colchetes pela suas informações.
+   
 ```md
 Nome Completo: [SEU_NOME_AQUI]
 GitHub Username: [SEU_USUARIO_GITHUB_AQUI]
