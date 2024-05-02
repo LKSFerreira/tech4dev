@@ -53,7 +53,7 @@ Acreditamos que o tempo dos desenvolvedores deve ser focado na criação de algo
 **Participe!**
 Entendemos que nenhum modelo de plataforma serve para todos os projetos, pois suas necessidades podem ser diferentes. Estaremos adicionando mais funcionalidades no futuro próximo. Você pode também sugerir mudanças fazendo um [**fork**](https://github.com/LKSFerreira/tech4dev/fork) deste repositório e criando um [**pull request**](https://github.com/LKSFerreira/tech4dev/pulls) ou abrindo uma [**issue**](https://github.com/LKSFerreira/tech4dev/issues/new/choose).
 
-<a href="https://github.com/LKSFerreira/tech4dev/issues/new?assignees=&labels=feature&projects=&template=profile-feature.md&title=Adicione+meu+portf%C3%B3lio+-+%5BSEU_NOME_AQUI%5D" target="_blank">
+<a href="https://github.com/LKSFerreira/tech4dev/issues/new?assignees=&labels=feature&projects=&template=add-profile.md&title=Adicione+meu+portf%C3%B3lio+-+%5BSEU_NOME_AQUI%5D" target="_blank">
     <img src="https://portalacustica.info/wp-content/uploads/2017/09/Inscreva-se.png" width="150" height="50">
 </a>
 <br><br>
