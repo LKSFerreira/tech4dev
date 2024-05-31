@@ -18,7 +18,7 @@
     "status": false,
     "transactionId": "02059d99-e530-48ba-b765-7ed817f8a41a",
     "summary": "O Termo entre TechXYZ e ATOS BRASIL LTDA estabelece regras para troca de informações confidenciais, visando negociações e serviços. Exige-se sigilo, proteção de dados (conforme LGPD) e notificação imediatamente de violações. Vigora por 12 meses, com confidencialidade estendida por mais 5 anos após término. Violações implicam notificação, remediação e possíveis indenizações. Disputas serão resolvidas no foro da Comarca de São Paulo. Alterações no termo requerem consentimento escrito de ambas partes.",
-    "paragraphs": [
+    "paragraphy": [
       {
         "risk": 2,
         "description": "Cláusula 1.1: A Parte Receptora deve usar as Informações Confidenciais apenas para o propósito do NDA, mantendo-as em sigilo e limitando o acesso a indivíduos necessários.",
