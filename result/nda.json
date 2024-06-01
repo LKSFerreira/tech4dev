@@ -3,7 +3,7 @@
     {
       "id": 1,
       "page": 1,
-      "positions": [
+      "position": [
         {
           "x": 50.0,
           "y": 104.0,
@@ -18,11 +18,11 @@
     "status": false,
     "transactionId": "02059d99-e530-48ba-b765-7ed817f8a41a",
     "summary": "O Termo entre TechXYZ e ATOS BRASIL LTDA estabelece regras para troca de informações confidenciais, visando negociações e serviços. Exige-se sigilo, proteção de dados (conforme LGPD) e notificação imediatamente de violações. Vigora por 12 meses, com confidencialidade estendida por mais 5 anos após término. Violações implicam notificação, remediação e possíveis indenizações. Disputas serão resolvidas no foro da Comarca de São Paulo. Alterações no termo requerem consentimento escrito de ambas partes.",
-    "paragraphy": [
+    "paragraphs": [
       {
         "risk": 2,
         "description": "Cláusula 1.1: A Parte Receptora deve usar as Informações Confidenciais apenas para o propósito do NDA, mantendo-as em sigilo e limitando o acesso a indivíduos necessários.",
-        "positions": {
+        "position": {
           "x": 50.0,
           "y": 397.0,
           "width": 725.0,
@@ -32,7 +32,7 @@
       {
         "risk": 3,
         "description": "Cláusula 1.2: Conforme a LGPD, a Parte Receptora deve proteger as Informações Confidenciais contra acesso, divulgação ou tratamento não autorizado, reportando violações imediatamente.",
-        "positions": {
+        "position": {
           "x": 50.0,
           "y": 479.0,
           "width": 725.0,
@@ -42,7 +42,7 @@
       {
         "risk": 2,
         "description": "Cláusula 2.1: A Parte Receptora deve manter a confidencialidade das informações, usando-as exclusivamente para os fins estabelecidos e protegendo-as contra uso não autorizado.",
-        "positions": {
+        "position": {
           "x": 50.0,
           "y": 604.0,
           "width": 725.0,
@@ -52,7 +52,7 @@
       {
         "risk": 3,
         "description": "Cláusula 2.2: É obrigatório notificar imediatamente sobre qualquer violação da confidencialidade, com a Parte Receptora devendo cooperar para remediar a situação.",
-        "positions": {
+        "position": {
           "x": 50.0,
           "y": 683.0,
           "width": 725.0,
@@ -62,7 +62,7 @@
       {
         "risk": 1,
         "description": "Cláusula 2.3: Este documento consolida os direitos e obrigações de confidencialidade, superando entendimentos prévios. Alterações requerem escrita e assinatura de ambas as partes.",
-        "positions": {
+        "position": {
           "x": 50.0,
           "y": 745.0,
           "width": 725.0,
